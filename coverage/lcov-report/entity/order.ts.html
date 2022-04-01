@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">75.92% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>45/54</span>
+                <span class='fraction'>41/54</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>10/10</span>
+                <span class='fraction'>6/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">42.85% </span>
+                <span class="strong">71.42% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/7</span>
+                <span class='fraction'>5/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">75.92% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>45/54</span>
+                <span class='fraction'>41/54</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -125,33 +125,19 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -161,8 +147,22 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -185,37 +185,37 @@ export default class Order {
     }
 &nbsp;
     validate() {
-        if (this._id.length === 0) {
-            throw new Error("Id is required");
-        }
-        if (this._customerId.length === 0) {
-            throw new Error("CustomerId is required");
-        }
-        if (this._items.length === 0) {
-            throw new Error("Items are required");
-        }
+        if (this._id.length === 0) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error("Id is required");</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
+        if (this._customerId.length === 0) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error("CustomerId is required");</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
+        if (this._items.length === 0) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error("Items are required");</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
 &nbsp;
-        if (this._items.some((item) =&gt; item.quantity &lt;= 0)) {
-            throw new Error("Quantity must be greater than 0");
-        }
+        if (this._items.some((item) =&gt; item.quantity &lt;= 0)) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error("Quantity must be greater than 0");</span>
+<span class="cstat-no" title="statement not covered" >        }</span>
 &nbsp;
     }
 &nbsp;
-    total(): number {
-        return this._items.reduce((acc, item) =&gt; acc + item.price, 0);
+<span class="fstat-no" title="function not covered" >    total(): number {</span>
+<span class="cstat-no" title="statement not covered" >        return this._items.reduce((acc, item) =&gt; acc + item.price, 0);</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+&nbsp;
+    get id(): string {
+        return this._id;
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    get id(): string {</span>
-<span class="cstat-no" title="statement not covered" >        return this._id;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    get customerId(): string {
+        return this._customerId;
+    }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    get customerId(): string {</span>
-<span class="cstat-no" title="statement not covered" >        return this._customerId;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-&nbsp;
-<span class="fstat-no" title="function not covered" >    get items(): OrderItem[] {</span>
-<span class="cstat-no" title="statement not covered" >        return this._items;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
+    get items(): OrderItem[] {
+        return this._items;
+    }
 &nbsp;
 <span class="fstat-no" title="function not covered" >    changeItems(items: OrderItem[]): void {</span>
 <span class="cstat-no" title="statement not covered" >        this._items = items;</span>
@@ -229,7 +229,7 @@ export default class Order {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at Wed Mar 30 2022 19:07:33 GMT-0300 (Brasilia Standard Time)
+                at Fri Apr 01 2022 11:39:17 GMT-0300 (Brasilia Standard Time)
             </div>
         <script src="../prettify.js"></script>
         <script>
